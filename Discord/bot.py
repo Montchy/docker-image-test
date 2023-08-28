@@ -104,7 +104,6 @@ async def send_private_mail(channel, client, important_message, clean, link):
 
 
 def run_discord_bot():
-    TOKEN = "MTE0MzE1NTgzNTk3MTgzMzk1Nw.GKF1_b.vpSnorzeA-QDSO04fejBmD96W-u5jLLNZmKn7Q"
     client = discord.Client(intents=intents)
 
     @client.event
