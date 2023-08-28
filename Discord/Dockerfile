@@ -21,4 +21,4 @@ RUN pip3 install --upgrade pip setuptools && \
 COPY . .
 
 # Set the entry point
-CMD ["python3", "your_script.py"]
+CMD ["python3", "main.py"]
