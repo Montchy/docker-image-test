@@ -7,8 +7,8 @@ on:
     branches: [ "main" ]
 
 jobs:
-  publish-hello-docker-image:
-    runs-on: alpine-latest
+  publish-docker-image:
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -20,7 +20,7 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
         
-    - name: Build the hello-docker Docker image
+    - name: Margelo-Discord-Bot
       run: |
         docker build . --tag ghcr.io/deselikem/hello-docker-gcr-demo:latest
         docker run ghcr.io/deselikem/hello-docker-gcr-demo:latest
